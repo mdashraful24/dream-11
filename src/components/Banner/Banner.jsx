@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const Banner = ({ handleMoney }) => {
     return (
         <div
-            className="hero rounded-2xl hero-overlay bg-black bg-opacity-100 "
+            className="hero rounded-2xl hero-overlay bg-black bg-opacity-100"
             style={{backgroundImage: `url(${banner})`}}>
             <div className="rounded-2xl"></div>
             <div className="hero-content text-neutral-content text-center flex-col p-16">

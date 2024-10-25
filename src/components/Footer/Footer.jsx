@@ -3,7 +3,7 @@ import footer from '../../assets/logo-footer.png'
 const Footer = () => {
     return (
         <div>
-            <section className="bg-[#050b2c] pt-56 pb-5 space-y-5">
+            <section className="bg-[#040927] pt-64 pb-5 space-y-5">
                 <footer className="flex flex-col justify-center items-center gap-5 border-b border-stone-500">
                     <div>
                         <img src={footer} alt="" />

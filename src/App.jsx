@@ -14,31 +14,85 @@ function App() {
   const [selectPlayer, setSelectPlayer] = useState([]);
 
   const handleMoney = () => {
-    console.log('add money clicked');
-    const newBalance = balance + 1000000;
+    const newBalance = balance + 100000000;
     setBalance(newBalance);
+    // alert('Congratulations! Credited Amount has Added');
   }
 
-  const handleSelectPlayer = (price, id) => {
-    if(price <= balance){
-      // Success toast
-      toast.success('Congratulations! Player selected.', {
-        position: 'top-center',
+  const handleRemoveSelectPlayer = (player) => {
+    const newSelectList = selectPlayer.filter((removePlayer) => 
+      removePlayer.playerId !== player.playerId
+    )
+    // Error toast
+    toast.error('Delete selected player', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+      transition: Bounce,
+      });
+    setSelectPlayer(newSelectList);
+  }
+  
+const handleSelectPlayer = (player) => {
+  // Check if player is already selected
+  if (selectPlayer.some((selected) => selected.playerId === player.playerId)) {
+      // alert("This player has already been selected.");
+      toast.error('This player has already been selected.', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+          transition: Bounce,
+          });
+      return;
+  }
+
+  // Check if the maximum number of players is reached
+  if (selectPlayer.length >= 6) {
+      // alert("Maximum 6 players can be selected");
+      toast('Maximum 6 players can be selected', {
+        position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: 'light',
+        theme: "light",
         transition: Bounce,
-      });
+        });
+      return;
+  }
 
-      setBalance(balance - price);
-      setSelectPlayer([...selectPlayer, id]);
+  // Check if balance is enough
+  if (player.biddingPrice <= balance) {
+    // Success toast
+    toast.success('Congratulations! Player selected.', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+      transition: Bounce,
+    });
+      setBalance(balance - player.biddingPrice);
+      const newSelectedPlayer = [...selectPlayer, player];
+      setSelectPlayer(newSelectedPlayer);
     } else {
-      // Error toast
-      toast.error('Not enough money to select this player', {
+      // alert("Not enough money to select this player");
+      toast.error('Not enough money to select this player.', {
         position: 'top-center',
         autoClose: 5000,
         hideProgressBar: false,
@@ -49,21 +103,27 @@ function App() {
         theme: 'light',
         transition: Bounce,
         });
-    }
   }
+};
 
   return (
-    <div className='w-11/12 mx-auto space-y-10'>
+    <div className='w-11/12 container mx-auto'>
       <ToastContainer />
       {/* Header */}
       <Header balance={balance}></Header>
+
       {/* Banner */}
       <Banner handleMoney={handleMoney}></Banner>
+
       {/* Card Section */}
-      <Players handleSelectPlayer={handleSelectPlayer}></Players>
+      <Players handleSelectPlayer={handleSelectPlayer} 
+              selectPlayer={selectPlayer} 
+              handleRemoveSelectPlayer={handleRemoveSelectPlayer}></Players>
+
       {/* Subscribe */}
       <Subscribe></Subscribe>
       <section className='absolute'></section>
+
       {/* Footer */}
       <Footer></Footer>
     </div>

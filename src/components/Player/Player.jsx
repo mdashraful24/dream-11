@@ -29,13 +29,13 @@ const Player = ({ player, handleSelectPlayer }) => {
             <p className="font-semibold">Rating: {rating}</p>
             <div className="flex items-center justify-between text-lg">
             <div className="flex items-center gap-3">
-                <p className="font-semibold">Left-Hand-Bat</p>
+                <p className="font-semibold">{battingType}</p>
             </div>
             <span className="text-gray-500">{battingType}</span>
             </div>
             <div className="card-actions items-center justify-between">
             <p className="font-semibold">Price: ${biddingPrice}</p>
-            <button onClick={() => handleSelectPlayer(biddingPrice, player.id)} className="btn btn-sm text-lg">Choose Player</button>
+            <button onClick={() => handleSelectPlayer(player)} className="btn btn-sm text-lg">Choose Player</button>
             </div>
         </div>
         </div>
