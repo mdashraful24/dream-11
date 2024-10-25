@@ -1,8 +1,17 @@
-# React + Vite
+Description:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BPL-DREAM XI is an interactive fantasy cricket application where users assemble their ultimate cricket team by selecting players within a given budget. Players can earn virtual credits, build their team strategically, and enhance their roster as they move forward in the game. The project brings the excitement of cricket into a personalized team-building experience.
 
-Currently, two official plugins are available:
+Technologies Used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React for the frontend
+TailwindCSS for styling
+JSON data handling for player profiles
+PropTypes for validation
+Toastify for notifications
+
+3 Key Features:
+
+Budget Management: Users receive a virtual balance to select players, encouraging strategic budget use.
+Dynamic Player Selection: Real-time updates to player availability and balance based on selections and deselections.
+Notification System: Interactive feedback with success or error messages to enhance user experience through Toastify alerts.

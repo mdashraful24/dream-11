@@ -4,14 +4,14 @@ const Footer = () => {
     return (
         <div>
             <section className="bg-[#040927] pt-64 pb-5 space-y-3">
-                <footer className="flex flex-col justify-center items-center gap-5 border-b border-stone-500">
+                <footer className="flex flex-col justify-center items-center gap-5 mb-7">
                     <div>
                         <img src={footer} alt="" />
                     </div>
                     <div className="flex flex-col md:flex-row lg:flex-row justify-between space-y-12 md:space-y-0 lg:space-y-0 p-4 container mx-auto w-11/12">
                         <nav className="space-y-3">
                             <h1 className="text-white text-xl font-bold">About Us</h1>
-                            <p className="text-stone-400">We are a passionate team dedicated <br /> to providing the best services to <br /> our customers.</p>
+                            <p className="text-stone-400">We are a dedicated team focused on providing  <br /> outstanding service and surpassing customer <br /> expectations through commitment, creativity, <br /> and ongoing enhancement.</p>
                         </nav>
                         <nav className="space-y-3">
                             <h6 className="text-white text-xl font-bold">Quick Links</h6>
@@ -25,13 +25,17 @@ const Footer = () => {
                         <nav className="flex flex-col space-y-2">
                             <h6 className="text-white text-xl font-bold">Subscribe</h6>
                             <p className="text-stone-400">Subscribe to our newsletter for the latest updates.</p>
-                            <div className="join">
-                                <input type="text" placeholder="Enter your email" className="input input-bordered join-item" />
-                                <button className="btn btn-primary join-item">Subscribe</button>
+                            <div className='flex items-center'>
+                                <input className="px-4 py-[12px] rounded-l-lg outline-none" type="text" placeholder="Enter your email" />
+                                <button 
+                                    className="btn rounded-l-none text-black border-none text-xl px-5" 
+                                    style={{ background: 'linear-gradient(to right, #ff99ff 0%, #ffcc00 100%)' }}>
+                                    Subscribe</button>
                             </div>
                         </nav>
                     </div>
                 </footer>
+                <div className='border-b border-stone-500'></div>
                 <div className="text-stone-400 text-center">
                     <p>@2024 Your Company All Rights Reserved.</p>
                 </div>

@@ -22,7 +22,7 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
 
     return (
         <div className="mt-12">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col md:flex-row md:px-5 lg:px-0 lg:flex-row justify-between items-center mb-8 gap-3">
         <h3 className="text-2xl font-bold">
                 {showPlayer ? "Available Players" : `Selected Players (${selectPlayer.length}/6)`}
             </h3>
@@ -37,7 +37,7 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
         </div>
         {showPlayer ? (
             <div>
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid lg:grid-cols-3 gap-5">
                     {players.map((player) => (
                         <Player
                             key={player.playerId}
@@ -48,17 +48,18 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
                 </div>
             </div>
         ) : selectPlayer.length > 0 ? (
-        <div className="space-y-5">
+        <div className="space-y-5 px-5 lg:px-0">
             {selectPlayer.map((player) => (
                 <div key={player.playerId} className="flex justify-between items-center border rounded-2xl p-5">
                     <div>
                         <div className="flex items-center gap-5">
                             <div>
-                                <img className="w-16 h-16 rounded-2xl object-cover" src={player.image} alt="" />
+                                <img className="w-20 h-20 rounded-2xl object-cover" src={player.image} alt="" />
                             </div>
                             <div className="">
-                                <h1 className="font-bold text-2xl">{player.name}</h1>
-                                <p className="text-lg">{player.battingType}</p>
+                                <h1 className="font-bold text-xl">{player.name}</h1>
+                                <p className="text-lg">{player.role}</p>
+                                <p className="text-lg">Price: ${player.biddingPrice}</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +72,10 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
                     }} className="btn text-lg bg-[#E7FE29] text-black">Add More Player</button>
         </div>
             ) : (
-                <h1 className="text-center text-3xl">No selected player is available.</h1>
+                <button onClick={() => {
+                    setShowPlayer(true);
+                    setActiveButton('available');
+                }} className="btn text-lg bg-[#E7FE29] text-black">Add More Player</button>
             )}
         </div>
     );
