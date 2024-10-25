@@ -3,18 +3,16 @@ import footer from '../../assets/logo-footer.png'
 const Footer = () => {
     return (
         <div>
-            <section className="bg-[#040927] pt-64 pb-5 space-y-5">
+            <section className="bg-[#040927] pt-64 pb-5 space-y-3">
                 <footer className="flex flex-col justify-center items-center gap-5 border-b border-stone-500">
                     <div>
                         <img src={footer} alt="" />
                     </div>
-        
                     <div className="flex flex-col md:flex-row lg:flex-row justify-between space-y-12 md:space-y-0 lg:space-y-0 p-4 container mx-auto w-11/12">
                         <nav className="space-y-3">
                             <h1 className="text-white text-xl font-bold">About Us</h1>
                             <p className="text-stone-400">We are a passionate team dedicated <br /> to providing the best services to <br /> our customers.</p>
                         </nav>
-
                         <nav className="space-y-3">
                             <h6 className="text-white text-xl font-bold">Quick Links</h6>
                             <div className="flex flex-col space-y-2 text-stone-400">
@@ -24,13 +22,12 @@ const Footer = () => {
                                 <li><a className="link link-hover">Contact</a></li>
                             </div>
                         </nav>
-
-                        <nav className="flex flex-col space-y-3">
+                        <nav className="flex flex-col space-y-2">
                             <h6 className="text-white text-xl font-bold">Subscribe</h6>
                             <p className="text-stone-400">Subscribe to our newsletter for the latest updates.</p>
-                            <div>
-                                <input className="px-4 py-3 rounded-l-lg" type="text" placeholder="Enter your email" />
-                                <button className="btn bg-primary rounded-l-none border-none text-lg text-white">Subscribe</button>
+                            <div className="join">
+                                <input type="text" placeholder="Enter your email" className="input input-bordered join-item" />
+                                <button className="btn btn-primary join-item">Subscribe</button>
                             </div>
                         </nav>
                     </div>

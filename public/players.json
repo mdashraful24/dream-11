@@ -8,120 +8,54 @@
         "role": "Batsman",
         "battingType": "Right-hand Bat",
         "bowlingType": "Right-arm Medium",
-        "biddingPrice": 1500000
+        "biddingPrice": 500000
     },
     {
         "playerId": 2,
-        "name": "Kane Williamson",
-        "country": "New Zealand",
-        "image": "https://i.ibb.co.com/Yyg5fZ3/kanewilliamson.webp",
-        "rating": 9.4,
-        "role": "Batsman",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "Right-arm Off-spin",
-        "biddingPrice": 1200000
+        "name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/xfYHL47/shakibalhasan.jpg",
+        "rating": 9.5,
+        "role": "All-rounder",
+        "battingType": "Left-hand Bat",
+        "bowlingType": "Left-arm Orthodox",
+        "biddingPrice": 200000
     },
     {
         "playerId": 3,
         "name": "Pat Cummins",
         "country": "Australia",
         "image": "https://i.ibb.co.com/khZgrkn/patcummins.jpg",
-        "rating": 9.2,
+        "rating": 9.6,
         "role": "Bowler",
         "battingType": "Right-hand Bat",
         "bowlingType": "Right-arm Fast",
-        "biddingPrice": 1800000
+        "biddingPrice": 400000
     },
     {
         "playerId": 4,
-        "name": "Ben Stokes",
-        "country": "England",
-        "image": "https://i.ibb.co.com/TDX0LrZ/benstokes.webp",
-        "rating": 9.6,
-        "role": "All-rounder",
-        "battingType": "Left-hand Bat",
-        "bowlingType": "Right-arm Medium",
-        "biddingPrice": 2000000
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "image": "https://i.ibb.co.com/Yyg5fZ3/kanewilliamson.webp",
+        "rating": 9.8,
+        "role": "Batsman",
+        "battingType": "Right-hand Bat",
+        "bowlingType": "Right-arm Off-spin",
+        "biddingPrice": 400000
     },
     {
         "playerId": 5,
-        "name": "Babar Azam",
-        "country": "Pakistan",
-        "image": "https://i.ibb.co.com/nkw92gp/babarazam.jpg",
-        "rating": 9.5,
-        "role": "Batsman",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "None",
-        "biddingPrice": 1300000
-    },
-    {
-        "playerId": 6,
-        "name": "Jasprit Bumrah",
-        "country": "India",
-        "image": "https://i.ibb.co.com/Yydxwck/jaspritumrah.jpg",
-        "rating": 9.7,
-        "role": "Bowler",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "Right-arm Fast",
-        "biddingPrice": 1700000
-    },
-    {
-        "playerId": 7,
-        "name": "Trent Boult",
-        "country": "New Zealand",
-        "image": "https://i.ibb.co.com/12DmXCH/trentboult.jpg",
-        "rating": 9.3,
-        "role": "Bowler",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "Left-arm Fast",
-        "biddingPrice": 1400000
-    },
-    {
-        "playerId": 8,
-        "name": "Rashid Khan",
-        "country": "Afghanistan",
-        "image": "https://i.ibb.co.com/TrsQJMq/rashidkhan.jpg",
-        "rating": 9.6,
-        "role": "Bowler",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "Right-arm Leg Spin",
-        "biddingPrice": 1500000
-    },
-    {
-        "playerId": 9,
-        "name": "Steve Smith",
-        "country": "Australia",
-        "image": "https://i.ibb.co.com/syVzr9Y/stevesmith.webp",
-        "rating": 9.1,
-        "role": "Batsman",
-        "battingType": "Right-hand Bat",
-        "bowlingType": "Right-arm Leg Spin",
-        "biddingPrice": 1600000
-    },
-    {
-        "playerId": 10,
         "name": "David Warner",
         "country": "Australia",
         "image": "https://i.ibb.co.com/Ntds9Bw/davidwarner.webp",
-        "rating": 9.4,
+        "rating": 9.5,
         "role": "Batsman",
         "battingType": "Left-hand Bat",
         "bowlingType": "None",
-        "biddingPrice": 1400000
+        "biddingPrice": 300000
     },
     {
-        "playerId": 11,
-        "name": "Shakib Al Hasan",
-        "country": "Bangladesh",
-        "image": "https://i.ibb.co.com/xfYHL47/shakibalhasan.jpg",
-        "rating": 9.7,
-        "role": "All-rounder",
-        "battingType": "Left-hand Bat",
-        "bowlingType": "Left-arm Orthodox",
-        "biddingPrice": 1900000
-    },
-    {
-        "playerId": 12,
+        "playerId": 6,
         "name": "Quinton de Kock",
         "country": "South Africa",
         "image": "https://i.ibb.co.com/Jv0QJzF/quintondekock.jpg",
@@ -129,21 +63,54 @@
         "role": "Wicketkeeper Batsman",
         "battingType": "Left-hand Bat",
         "bowlingType": "None",
-        "biddingPrice": 1500000
+        "biddingPrice": 300000
     },
     {
-        "playerId": 13,
-        "name": "KL Rahul",
+        "playerId": 7,
+        "name": "Rohit Sharma",
         "country": "India",
-        "image": "https://i.ibb.co.com/G9XW9yP/klrahul.webp",
-        "rating": 9.0,
+        "image": "https://i.ibb.co.com/6HHD9sd/rohitsharma.webp",
+        "rating": 9.6,
         "role": "Batsman",
         "battingType": "Right-hand Bat",
-        "bowlingType": "None",
-        "biddingPrice": 1300000
+        "bowlingType": "Right-arm Off-spin",
+        "biddingPrice": 400000
     },
     {
-        "playerId": 14,
+        "playerId": 8,
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "image": "https://i.ibb.co.com/TrsQJMq/rashidkhan.jpg",
+        "rating": 8.5,
+        "role": "Bowler",
+        "battingType": "Right-hand Bat",
+        "bowlingType": "Right-arm Leg Spin",
+        "biddingPrice": 150000
+    },
+    {
+        "playerId": 9,
+        "name": "Jasprit Bumrah",
+        "country": "India",
+        "image": "https://i.ibb.co.com/Yydxwck/jaspritumrah.jpg",
+        "rating": 9.7,
+        "role": "Bowler",
+        "battingType": "Right-hand Bat",
+        "bowlingType": "Right-arm Fast",
+        "biddingPrice": 200000
+    },
+    {
+        "playerId": 10,
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "image": "https://i.ibb.co.com/12DmXCH/trentboult.jpg",
+        "rating": 9.3,
+        "role": "Bowler",
+        "battingType": "Right-hand Bat",
+        "bowlingType": "Left-arm Fast",
+        "biddingPrice": 200000
+    },
+    {
+        "playerId": 11,
         "name": "Mitchell Starc",
         "country": "Australia",
         "image": "https://i.ibb.co.com/TwGZqFM/mitchellstarc.jpg",
@@ -151,17 +118,50 @@
         "role": "Bowler",
         "battingType": "Left-hand Bat",
         "bowlingType": "Left-arm Fast",
-        "biddingPrice": 1800000
+        "biddingPrice": 300000
+    },
+    {
+        "playerId": 12,
+        "name": "Mustafizur Rahman",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/4TLn2W2/mustafizurrahman.jpg",
+        "rating": 8.8,
+        "role": "Bowler",
+        "battingType": "Left-hand Bat",
+        "bowlingType": "Left-arm Fast",
+        "biddingPrice": 180000
+    },
+    {
+        "playerId": 13,
+        "name": "Sunil Narine",
+        "country": "West Indies",
+        "image": "https://i.ibb.co.com/ZhFrtQ9/sunilnarine.jpg",
+        "rating": 9.5,
+        "role": "Bowling Allrounder",
+        "battingType": "Left-hand Bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 190000
+    },
+    {
+        "playerId": 14,
+        "name": "Taskin Ahmed",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/p386R59/taskinahmed.jpg",
+        "rating": 8.7,
+        "role": "Bowler",
+        "battingType": "Left-hand Bat",
+        "bowlingType": "Right-arm Fast",
+        "biddingPrice": 160000
     },
     {
         "playerId": 15,
-        "name": "Rohit Sharma",
-        "country": "India",
-        "image": "https://i.ibb.co.com/bJfFpXg/rohitsharma.jpg",
-        "rating": 9.6,
-        "role": "Batsman",
+        "name": "Mohammad Nabi",
+        "country": "Afghanistan",
+        "image": "https://i.ibb.co.com/stPzXp5/mohammadnabi.jpg",
+        "rating": 9.1,
+        "role": "Bowling Allrounder",
         "battingType": "Right-hand Bat",
-        "bowlingType": "Right-arm Off-spin",
-        "biddingPrice": 1600000
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 220000
     }
 ]
