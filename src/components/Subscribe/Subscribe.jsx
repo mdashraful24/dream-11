@@ -8,7 +8,7 @@ const Subscribe = () => {
                     <div className='text-black'>
                         <h1 className="mb-5 text-5xl font-bold">Subscribe to our Newsletter</h1>
                         <p className="mb-5 text-2xl">Get the latest updates and news right in your inbox!</p>
-                        <div className='space-x-3 flex items-center'>
+                        <div className='space-x-3 items-center'>
                             <input className="px-4 py-[12px] rounded-lg border border-stone-300 w-40 md:w-60 lg:w-80" type="text" placeholder="Enter your email" />
                             <button 
                                 className="btn border-none text-xl px-5" 

@@ -13,7 +13,12 @@ const Header = ({balance}) => {
                 <p className='text-lg font-sora text-gray-500 cursor-default hidden md:block lg:block'>Fixture</p>
                 <p className='text-lg font-sora text-gray-500 cursor-default hidden md:block lg:block'>Teams</p>
                 <p className='text-lg font-sora text-gray-500 cursor-default hidden md:block lg:block'>Schedules</p>
-                <a className="btn bg-white text-xl hover:bg-white cursor-default focus:outline-none">{balance} Coin <img src={coin} alt="" /></a>
+                {/* <a className="btn bg-white text-xl hover:bg-white cursor-default focus:outline-none">{balance} Coin <img src={coin} alt="" /></a> */}
+                <div className='flex items-center gap-1 border rounded-lg px-3 py-2 cursor-default text-xl font-bold'>
+                    <p>{balance}</p>
+                    <p>Coin</p>
+                    <p><img className='w-5' src={coin} alt="" /></p>
+                </div>
             </div>
         </div>
     );
