@@ -2,7 +2,7 @@ import icon from '../../assets/player.png'
 import PropTypes from "prop-types"
 
 const Player = ({ player, handleSelectPlayer }) => {
-    const {image, name, country, role, rating, battingType, biddingPrice } = player;
+    const {image, name, country, role, rating, battingType, bowlingType, biddingPrice } = player;
 
     return (
         <div className='px-5 lg:px-0'>
@@ -33,7 +33,7 @@ const Player = ({ player, handleSelectPlayer }) => {
                 <div className="flex items-center gap-3">
                     <p className="font-semibold">{battingType}</p>
                 </div>
-                <span className="text-gray-500">{battingType}</span>
+                <span className="text-gray-500">{bowlingType}</span>
                 </div>
                 <div className="card-actions items-center justify-between">
                 <p className="text-lg font-semibold">Price: ${biddingPrice}</p>
