@@ -32,6 +32,12 @@ function App() {
     else if (typeOfMessage === 'error') {
       toast.error(alertMessage, toastMessageOptions);
     }
+    else if (typeOfMessage === 'warning') {
+      toast.warning(alertMessage, toastMessageOptions);
+    }
+    else if (typeOfMessage === 'info') {
+      toast.info(alertMessage, toastMessageOptions);
+    }
     else {
       toast(alertMessage, typeOfMessage);
     }
@@ -40,7 +46,7 @@ function App() {
   const handleMoney = () => {
     const newBalance = balance + 10000000;
     setBalance(newBalance);
-    showingToast('Congratulations! Credited Amount has been added', 'success');
+    showingToast('Congratulations! Balance Amount has been added.', 'success');
   };
 
   const handleRemoveSelectPlayer = (player) => {
@@ -54,11 +60,11 @@ function App() {
   
 const handleSelectPlayer = (player) => {
   if (selectPlayer.some((selected) => selected.playerId === player.playerId)) {
-    showingToast(`${player.name} has already been selected.`, 'error');
+    showingToast(`${player.name} has already been selected.`, 'info');
       return;
   }
   if (selectPlayer.length >= 6) {
-    showingToast('Maximum 6 players can be selected', 'error');
+    showingToast('Maximum 6 players can be selected.', 'warning');
       return;
   }
   if (player.biddingPrice <= balance) {
@@ -75,7 +81,7 @@ const handleSelectPlayer = (player) => {
   return (
     <div>
       <ToastContainer />
-      <div className='w-11/12 container mx-auto'>
+      <div className='lg:w-11/12 lg:container mx-auto'>
           {/* Header Section */}
           <Header balance={balance}></Header>
           {/* Banner Section */}

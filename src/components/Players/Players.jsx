@@ -70,7 +70,7 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
                     <button onClick={() => {
                         setShowPlayer(true);
                         setActiveButton('available');
-                    }} className="btn border-none text-xl text-black bg-[#E7FE29] hover:bg-[#E7FE29]">Add More Player</button>
+                    }} className="btn border-none text-xl text-black bg-[#E7FE29] hover:bg-[#E7FE29] hover:border-none">Add More Player</button>
                 </div>
         </div>
             ) : (
