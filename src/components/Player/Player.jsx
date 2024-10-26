@@ -36,8 +36,8 @@ const Player = ({ player, handleSelectPlayer }) => {
                 <span className="text-gray-500">{battingType}</span>
                 </div>
                 <div className="card-actions items-center justify-between">
-                <p className="font-semibold">Price: ${biddingPrice}</p>
-                <button onClick={() => handleSelectPlayer(player)} className="btn btn-md text-lg bg-white hover:bg-[#E7FE29] hover:text-black hover:border-none">Choose Player</button>
+                <p className="text-lg font-semibold">Price: ${biddingPrice}</p>
+                <button onClick={() => handleSelectPlayer(player)} className="btn btn-md text-lg text-gray-600 bg-white hover:bg-[#E7FE29] hover:text-black hover:border-none">Choose Player</button>
                 </div>
             </div>
             </div>

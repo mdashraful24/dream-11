@@ -54,7 +54,7 @@ function App() {
   
 const handleSelectPlayer = (player) => {
   if (selectPlayer.some((selected) => selected.playerId === player.playerId)) {
-    showingToast('This player has already been selected.', 'error');
+    showingToast(`${player.name} has already been selected.`, 'error');
       return;
   }
   if (selectPlayer.length >= 6) {
@@ -62,7 +62,7 @@ const handleSelectPlayer = (player) => {
       return;
   }
   if (player.biddingPrice <= balance) {
-    showingToast('Congratulations! Player selected.', 'success');
+    showingToast(`Congratulations! ${player.name} has been selected.`, 'success');
     setBalance(balance - player.biddingPrice);
     const newSelectedPlayer = [...selectPlayer, player];
     setSelectPlayer(newSelectedPlayer);
@@ -78,7 +78,6 @@ const handleSelectPlayer = (player) => {
       <div className='w-11/12 container mx-auto'>
           {/* Header Section */}
           <Header balance={balance}></Header>
-
           {/* Banner Section */}
           <Banner handleMoney={handleMoney}></Banner> 
           {/* Card Section */}
@@ -89,7 +88,6 @@ const handleSelectPlayer = (player) => {
           <Subscribe></Subscribe>
           <section className='absolute'></section>
       </div>
-
       {/* Footer Section */}
       <Footer></Footer>
     </div>

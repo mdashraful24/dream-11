@@ -66,16 +66,20 @@ const Players = ({handleSelectPlayer, selectPlayer, handleRemoveSelectPlayer}) =
                     <button onClick={() => handleRemoveSelectPlayer(player)} className="p-2"><i className="fa-regular fa-trash-can text-[#F14749] text-lg"></i></button>
                 </div>
             ))}
-            <button onClick={() => {
+            <div className='w-[200px] border border-black p-2 rounded-xl hover:bg-[#E7FE29]'>
+                    <button onClick={() => {
                         setShowPlayer(true);
                         setActiveButton('available');
-                    }} className="btn text-lg bg-[#E7FE29] text-black">Add More Player</button>
+                    }} className="btn border-none text-xl text-black bg-[#E7FE29] hover:bg-[#E7FE29]">Add More Player</button>
+                </div>
         </div>
             ) : (
-                <button onClick={() => {
-                    setShowPlayer(true);
-                    setActiveButton('available');
-                }} className="btn text-lg bg-[#E7FE29] text-black">Add More Player</button>
+                <div className='w-[200px] border border-black p-2 rounded-xl hover:bg-[#E7FE29]'>
+                    <button onClick={() => {
+                        setShowPlayer(true);
+                        setActiveButton('available');
+                    }} className="btn border-none text-xl text-black bg-[#E7FE29] hover:bg-[#E7FE29]">Add More Player</button>
+                </div>
             )}
         </div>
     );

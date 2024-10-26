@@ -26,7 +26,7 @@ const Footer = () => {
                             <h6 className="text-white text-xl font-bold">Subscribe</h6>
                             <p className="text-stone-400">Subscribe to our newsletter for the latest updates.</p>
                             <div className='flex items-center'>
-                                <input className="px-4 py-[12px] rounded-l-lg outline-none" type="text" placeholder="Enter your email" />
+                                <input className="px-4 py-[12px] rounded-l-lg outline-none w-40 md:w-48 lg:w-52" type="text" placeholder="Enter your email" />
                                 <button 
                                     className="btn rounded-l-none text-black border-none text-xl px-5" 
                                     style={{ background: 'linear-gradient(to right, #ff99ff 0%, #ffcc00 100%)' }}>
