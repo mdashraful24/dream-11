@@ -19,5 +19,5 @@ Technologies Used:
 
 Live link:
 
-[Netlify live link](https://b10a7-select-your-xi.netlify.app/)
+[Netlify live link](https://b10a7-select-your-xi.netlify.app/) | 
 [Surge live link](https://b10a7-select-your-xi.surge.sh/)
