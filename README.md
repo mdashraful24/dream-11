@@ -1,6 +1,3 @@
-Here’s a professional `README.md` file for your **BPL-DREAM XI** project:
-
-````markdown
 # BPL-DREAM XI
 
 The **BPL-DREAM XI** app is an interactive cricket team selection platform built with React, designed to offer fans an immersive experience in forming their dream cricket team within a fixed credit budget. The app enables strategic team building while ensuring real-time feedback and a user-friendly interface.
@@ -101,5 +98,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Enjoy strategizing and building your dream cricket team! 🏏
-
-```
